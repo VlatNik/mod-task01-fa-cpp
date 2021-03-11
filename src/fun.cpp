@@ -7,21 +7,29 @@ unsigned int faStr1(const char *str)
     
   while(str[num] != '\0') {
       
-if (str[num]!=' ') {
+if (str[num]!=' ') 
+{
       
     if (str[num] >= '0' && str[num] <= '9')
     {
-        check=1;
         while(str[num]!=' ') num++;
     }
       
-    else if (str[num]!=' ') num++; 
-    else if (check==0) count++;
-                   }
-  else num++;
+    else {
+        while (str[i] != ' ')
+                             { 
+            if (str[num] >= '0' && str[num] <= '9' && check==0)
+                   {
+                num++; check=1;
+                   } 
+          else num++;
+                             }
+                    if (check == 0)
+					count++;
+         }
       check=0;
 }
-     
+  }
 return count;
   
 }
