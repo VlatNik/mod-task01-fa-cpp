@@ -5,7 +5,7 @@ unsigned int faStr1(const char *str)
     int check=0;
 
     
-  while(str[i] != '\0') {
+  while(str[num] != '\0') {
       
 if (str[num]!=' ') {
       
@@ -35,7 +35,7 @@ unsigned int faStr2(const char *str)
     int LatLet=0;
     int CapLet=0;
     
-  while(str[i] != '\0') 
+  while(str[num] != '\0') 
   {
       
 if (str[num]!=' ')
@@ -89,7 +89,7 @@ unsigned int faStr3(const char *str)
 
 
     
-  while(str[i] != '\0') 
+  while(str[num] != '\0') 
   {
       
 if (str[num]!=' ') 
