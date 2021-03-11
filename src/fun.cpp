@@ -16,7 +16,7 @@ if (str[num]!=' ')
     }
       
     else {
-        while (str[i] != ' ')
+        while (str[num] != ' ')
                              { 
             if (str[num] >= '0' && str[num] <= '9' && check==0)
                    {
