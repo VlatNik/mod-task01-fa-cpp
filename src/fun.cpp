@@ -64,7 +64,7 @@ if (str[num]!=' ')
 	}
 	else if ( str[num]!= ' ' && CapLet == 1 && check == 1 )
         {
-            if ((str[num] >= 65 && str[num] <= 90) && (str[num] > 122 || str[num] < 65)) uppercase_word = 0;
+            if ((str[num] >= 65 && str[num] <= 90) && (str[num] > 122 || str[num] < 65)) CapLet = 0;
             
         }
         num++;
