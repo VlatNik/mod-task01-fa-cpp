@@ -108,6 +108,6 @@ if (str[num]!=' ')
     Mcount=count/Wcount;
     int temp=Mcount;
  if (Mcount - temp >= 0.5) Mcount++;
- return Mcount;
+ return temp;
   
 }
