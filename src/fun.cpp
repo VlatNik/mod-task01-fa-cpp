@@ -12,7 +12,7 @@ if (str[num]!=' ')
       
     if (str[num] >= '0' && str[num] <= '9')
     {
-        while(str[num]!=' ') num++;
+        while(str[num]!=' ') {if (str[num] == '\0') break; num++;}
     }
       
     else {
