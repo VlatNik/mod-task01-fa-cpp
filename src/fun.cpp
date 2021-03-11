@@ -51,7 +51,7 @@ unsigned int faStr2(const char *str)
 if (str[num]!=' ')
 {
       
-    if (str[num] > 64 && str[num] < 91 && check==0;)
+    if (str[num] > 64 && str[num] < 91 && check==0)
     {
 	check=1;
         CapLet=1;
