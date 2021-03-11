@@ -92,8 +92,9 @@ if (str[num]!=' ')
       
   while (str[num]!=' ') 
   {
-      count++;
-      num++;
+      if (str[num] == '\0') break;
+	count++;
+	num++;
   }
     Wcount++;
 
@@ -104,7 +105,7 @@ if (str[num]!=' ')
     int temp=Mcount;
 	
 
- if (Mcount - temp >= 0.5) Mcount++;
+ if (Mcount - (float)temp >= 0.5) temp++;
  return temp;
   
 }
