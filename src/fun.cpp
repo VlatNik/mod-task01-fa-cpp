@@ -48,8 +48,7 @@ unsigned int faStr2(const char *str)
   while(str[num] != '\0') 
   {
       
-if (str[num]!=' ')
-{
+
       
     if (str[num] > 64 && str[num] < 91 && check==0)
     {
@@ -70,7 +69,7 @@ if (str[num]!=' ')
         num++;
     }
     if (CapLet==1 && check==1) 
-	    count;
+	    count++;
 
 return count;
 }
@@ -99,10 +98,12 @@ if (str[num]!=' ')
     Wcount++;
 
 }
-      else {num++;}
+      else num++;
   }
     Mcount=count/Wcount;
     int temp=Mcount;
+	
+
  if (Mcount - temp >= 0.5) Mcount++;
  return temp;
   
