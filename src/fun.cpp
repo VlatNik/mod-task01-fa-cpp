@@ -105,7 +105,9 @@ if (str[num]!=' ')
 }
       else {num++;}
   }
- Mcount=round(count/Wcount);
+    Mcount=count/Wcount;
+    int temp=Mcount;
+ if (Mcount - temp >= 0.5) Mcount++;
  return Mcount;
   
 }
