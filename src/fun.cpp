@@ -29,6 +29,7 @@ if (str[num]!=' ')
          }
       check=0;
 }
+	  num++;
   }
 return count;
   
