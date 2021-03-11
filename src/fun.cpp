@@ -41,7 +41,8 @@ unsigned int faStr2(const char *str)
  
  int num=0;
     int count=0;
-    int LatLet=0;
+	int check=0;
+    
     int CapLet=0;
     
   while(str[num] != '\0') 
@@ -50,41 +51,27 @@ unsigned int faStr2(const char *str)
 if (str[num]!=' ')
 {
       
-    if (str[num] > 64 && str[num] < 91)
+    if (str[num] > 64 && str[num] < 91 && check==0;)
     {
+	check=1;
         CapLet=1;
-        while(str[num]!=' ')
-        {
-        
-        if (str[num] > 96 && str[num] < 123) 
-           {
-            LatLet=1;
-        }
-            else {
-                LatLet=0;
-                  while(str[num]!=' ')
-            {
-                num++;
-            }
-                 }
-        num++;
-    
-        }}
-        else while(str[num]!=' ')
-            {
-                num++;
-            }
-         
     }
-  else num++;
-}
-      if (CapLet==1 && LatLet==1) count++;
-      
-     CapLet=0;
-     LatLet=0;
+	else if (str[num]==' ' && check==1)
+	{
+		if (CapLet==1) count++;
+		CapLet=0;
+		check=0;
+	}
+	else if ( str[num]!= ' ' && CapLet == 1 && check == 1 )
+        {
+            if ((str[num] >= 65 && str[num] <= 90) && (str[num] > 122 || str[num] < 65)) uppercase_word = 0;
+            
+        }
+        num++;
+    }
+    if (CapLet==1 && check==1) 
+	    count;
 
-          
-     
 return count;
 }
  
