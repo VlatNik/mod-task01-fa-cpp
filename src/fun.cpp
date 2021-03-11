@@ -22,7 +22,7 @@ if (str[num]!=' ')
                    {
                 num++; check=1;
                    } 
-          else num++;
+          else {num++};
                              }
                     if (check == 0)
 					count++;
@@ -63,7 +63,8 @@ unsigned int faStr2(const char *str)
 	}
 	else if ( str[num]!= ' ' && CapLet == 1 && check == 1 )
         {
-            if ((str[num] >= 65 && str[num] <= 90) && (str[num] > 122 || str[num] < 65)) CapLet = 0;
+            if (str[num] >= 65 && str[num] <= 90) CapLet = 0;
+	if (str[num] > 122 || str[num] < 65) CapLet = 0;
             
         }
         num++;
@@ -101,8 +102,8 @@ if (str[num]!=' ')
 }
       else num++;
   }
-    Mcount=count/Wcount;
-    int temp=Mcount;
+    Mcount=count/ float(Wcount);
+    int temp=Mcount; 
 	
 
  if (Mcount - (float)temp >= 0.5) temp++;
