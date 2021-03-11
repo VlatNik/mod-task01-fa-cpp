@@ -19,7 +19,7 @@ if (str[num]!=' ') {
     else if (check==0) count++;
                    }
   else num++;
-      check=0
+      check=0;
 }
      
 return count;
@@ -35,18 +35,20 @@ unsigned int faStr2(const char *str)
     int LatLet=0;
     int CapLet=0;
     
-  while(*str) {
+  while(*str) 
+  {
       
-if (str[num]!=' ') {
+if (str[num]!=' ')
+{
       
-    if (str[num] > '64' && str[num] < '91')
+    if (str[num] > 64 && str[num] < 91)
     {
         CapLet=1;
         while(str[num]!=' ')
         {
-        num++;
-        if (str[num] > '96' && str[num] < '123') 
-        {
+        
+        if (str[num] > 96 && str[num] < 123) 
+           {
             LatLet=1;
         }
             else {
@@ -56,7 +58,9 @@ if (str[num]!=' ') {
                 num++;
             }
                  }
-        }
+        num++;
+    
+        }}
         else while(str[num]!=' ')
             {
                 num++;
@@ -69,7 +73,8 @@ if (str[num]!=' ') {
       
      CapLet=0;
      LatLet=0;
-          }
+
+          
      
 return count;
 }
