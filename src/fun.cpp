@@ -22,7 +22,7 @@ if (str[num]!=' ')
                    {
                 num++; check=1;
                    } 
-          else {num++};
+          else num++;
                              }
                     if (check == 0)
 					count++;
